@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "lemonade";
+    src: url("../font/lemonade.woff") format('woff');
+}
+
+body {
+	font-family: lemonade;
+	font-size: 30px;
+	line-height: 45px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background: url("../img/logo.png") no-repeat 50% 10px #666666;
+}
+
+#content {
+	padding-top: 350px;	
+	text-align: center;
+}
