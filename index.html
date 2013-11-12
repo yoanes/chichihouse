@@ -4,6 +4,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<title>ChiChi House</title>
 		<link href="css/chichihouse.css" type="text/css" rel="stylesheet"/>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/chichihouse.js"></script>
 	</head>
 	<body>
 		<div id="content">
@@ -13,6 +16,18 @@
 			03 9917 2194 <br/>
 			chichihousecafe@hotmail.com <br/>
 			M-T: 6AM - 3PM, F: 6AM - 4PM, S-S: 7.30AM-4PM
+		</div>
+		<ul id="footerMenu">
+			<li><a href="#topContent" id="menuLink">Menu</a></li>
+			<li><a href="#topContent" id="fbLink">Facebook</a></li>
+			<li><a href="#topContent" id="mapLink">Map</a></li>
+		</ul>
+		
+		<div id="dynamic">
+			<object data="menu.pdf" type="application/pdf" id="menu" class="hidden">
+	    		<embed src="menu.pdf" type="application/pdf" />
+			</object>
+			<div id="map" class="hidden"></div>
 		</div>
 	</body>
 </html>

@@ -1,18 +1,55 @@
 @font-face {
     font-family: "lemonade";
-    src: url("../font/lemonade.woff") format('woff');
+    src: url("../font/lemonade.woff") format("woff"),
+    	 url("../font/lemonade.svg#lemonade") format("svg"),
+    	 url("../font/lemonade.eot"),
+    	 url("../font/lemonade.eot?#iefix") format("embedded-opentype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
 	font-family: lemonade;
-	font-size: 30px;
-	line-height: 45px;
+	font-size: 40px;
+	line-height: 50px;
 	text-transform: uppercase;
 	color: #ffffff;
 	background: url("../img/logo.png") no-repeat 50% 10px #666666;
+	text-align: center;
 }
+
+a { 
+	color: #ffffff;
+	text-decoration: none;	
+}
+
+#menu.hidden { display: none; }
+#map.hidden { visibility: hidden; }
 
 #content {
 	padding-top: 350px;	
-	text-align: center;
+}
+
+ul#footerMenu {
+	list-style-type: none;
+	margin: 30px 300px 20px 300px;
+}
+
+ul#footerMenu li {
+	float: left;
+	padding: 10px;
+	margin-left: 20px;	
+}
+
+#dynamic { margin-top: 100px; }
+
+#dynamic #menu {
+	width: 570px;
+	height: 3224px;
+}
+
+#dynamic #map {
+	width: 800px;
+	height: 300px;
+	margin: auto;
 }
