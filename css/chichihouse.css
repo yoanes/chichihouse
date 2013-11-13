@@ -30,9 +30,17 @@ a {
 	padding-top: 350px;	
 }
 
+#footer {
+	position: relative;
+	left: -50%;
+	float: right;	
+}
+
 ul#footerMenu {
 	list-style-type: none;
-	margin: 30px 300px 20px 300px;
+	float: left;
+	position: relative;
+	left: 50%;
 }
 
 ul#footerMenu li {
@@ -41,7 +49,10 @@ ul#footerMenu li {
 	margin-left: 20px;	
 }
 
-#dynamic { margin-top: 100px; }
+#dynamic {
+	clear: both;
+	margin-top: 100px; 
+}
 
 #dynamic #menu {
 	width: 570px;
